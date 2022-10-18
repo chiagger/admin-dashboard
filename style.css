@@ -16,8 +16,6 @@ body {
     gap: 12px;
 }
 
-
-
 .sidebar img {
     width: 37px;
 }
@@ -34,9 +32,89 @@ body {
 }
 
 .header {
-    background-color: #adc6dc;
+    background-color: #FFFFFF;
     grid-column: 2 / 4;
     grid-row: 1;
+    display:grid;
+    grid-template-rows: 1fr 1.5fr;
+}
+
+.header-top {
+    display:grid;
+    grid-template-columns: 4fr 1fr;
+    gap: max(15%, 20px);
+}
+
+.header-top .right {
+    display:flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-top .user {
+    font-size: 0.7em;
+}
+
+.header-top .left {
+    display:flex;
+    align-items: center;
+    gap:20px;
+}
+
+.header-top img {
+    width: 35px;
+}
+
+.header-bottom {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-bottom .left {
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+}
+
+.greeting .hello {
+    font-size: 0.7em;
+    font-weight: 400;
+    padding-bottom:0;
+}
+
+.greeting .user {
+    font-size: 0.9em;
+    padding-top:0;
+}
+
+
+.header-bottom .right .actions {
+    background-color: #1992D4;
+    border: none;
+    color:white;
+    padding:10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+    border-radius: 25px;
+    font-size: 0.8em;
+}
+
+.header-bottom .right {
+    margin-right: 2rem;
+    display:flex;
+    gap: 1rem;
+}
+
+#searchbar {
+    flex:1;
+    border-radius: 25px;
+    border:none;
+    background-color: #E2E8F0;
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 0.7em;
 }
 
 .sidebar {
@@ -46,6 +124,7 @@ body {
     color: #FFFFFF;
     display: grid;
     grid-template-rows: 1fr 10fr;
+
     gap: 50px;
 }
 
