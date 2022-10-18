@@ -35,18 +35,18 @@ body {
     background-color: #FFFFFF;
     grid-column: 2 / 4;
     grid-row: 1;
-    display:grid;
+    display: grid;
     grid-template-rows: 1fr 1.5fr;
 }
 
 .header-top {
-    display:grid;
+    display: grid;
     grid-template-columns: 4fr 1fr;
     gap: max(15%, 20px);
 }
 
 .header-top .right {
-    display:flex;
+    display: flex;
     align-items: center;
     gap: 20px;
 }
@@ -56,9 +56,9 @@ body {
 }
 
 .header-top .left {
-    display:flex;
+    display: flex;
     align-items: center;
-    gap:20px;
+    gap: 20px;
 }
 
 .header-top img {
@@ -66,13 +66,20 @@ body {
 }
 
 .header-bottom {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
+
+    box-shadow:
+        -6px 0 white,
+        /*Left masking shadow*/
+        6px 0 white,
+        /*Right masking shadow*/
+        0 7px 4px -3px rgb(208, 208, 208);
 }
 
 .header-bottom .left {
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 5fr;
     align-items: center;
 }
@@ -80,20 +87,20 @@ body {
 .greeting .hello {
     font-size: 0.7em;
     font-weight: 400;
-    padding-bottom:0;
+    padding-bottom: 0;
 }
 
 .greeting .user {
     font-size: 0.9em;
-    padding-top:0;
+    padding-top: 0;
 }
 
 
 .header-bottom .right .actions {
     background-color: #1992D4;
     border: none;
-    color:white;
-    padding:10px;
+    color: white;
+    padding: 10px;
     padding-right: 20px;
     padding-left: 20px;
     font-weight: bold;
@@ -103,14 +110,14 @@ body {
 
 .header-bottom .right {
     margin-right: 2rem;
-    display:flex;
+    display: flex;
     gap: 1rem;
 }
 
 #searchbar {
-    flex:1;
+    flex: 1;
     border-radius: 25px;
-    border:none;
+    border: none;
     background-color: #E2E8F0;
     padding: 10px;
     padding-left: 20px;
@@ -125,10 +132,12 @@ body {
     display: grid;
     grid-template-rows: 1fr 10fr;
 
+
     gap: 50px;
 }
 
 .sidebar-top {
+
     grid-row: 1;
     display: flex;
     align-items: center;
@@ -165,6 +174,93 @@ body {
     font-weight: bold;
 }
 
+.content {
+    background-color: #E2E8F0;
+    grid-template-rows: 1fr 20fr;
+}
+
+.content .title {
+    font-size: 0.7em;
+    padding: 15px;
+}
+
+.content .bottom {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-rows: repeat(3, minmax(200px, 1fr));
+}
+
+.content .bottom .project {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgb(214, 214, 214);
+    display: grid;
+    grid-template-columns: 1fr 150fr;
+    min-width: 13rem;
+}
+
+.content .bottom .project .text {
+    padding: 30px;
+}
+
+.content .bottom .project .decoration {
+    background-color: #FACC15;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(189, 188, 188, 0.858);
+}
+
+.project .desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.project .desc .title {
+    padding: 30px;
+    padding-bottom: 0px;
+    font-size: 1em;
+}
+
+.project .desc .text {
+    padding: 10px;
+    padding-top: 0px;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(95, 95, 95);
+}
+
+.project .desc .icons {
+    flex:1;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.project .desc .icons button {
+    width: fit-content;
+    background: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.icons button:hover {
+   box-shadow: 2px 2px 4px gray;
+}
+
+.icons button:active {
+   box-shadow: 2px 2px 4px rgb(50, 50, 50);
+}
+
+.icons .fav {}
+
+.icons .seen {}
+
+.icons .share {}
+
+.news {
+    background-color: #E2E8F0;
+
+}
 
 
 
