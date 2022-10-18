@@ -192,7 +192,7 @@ body {
 }
 
 .content {
-    background-color: #E2E8F0;
+    background-color: #eff4fa;
     grid-template-rows: 1fr 20fr;
 }
 
@@ -231,7 +231,7 @@ body {
 }
 
 .content .bottom .project .decoration {
-    background-color: #FACC15;
+    background-color: #1992D4;
     border-radius: 10px;
     box-shadow: 2px 2px 4px rgba(189, 188, 188, 0.858);
 }
@@ -278,7 +278,7 @@ body {
 }
 
 .news {
-    background-color: #E2E8F0;
+    background-color: #eff4fa;
     display: flex;
     flex-direction: column;
     gap: 25px;
