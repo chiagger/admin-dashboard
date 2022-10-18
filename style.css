@@ -230,7 +230,7 @@ body {
 }
 
 .project .desc .icons {
-    flex:1;
+    flex: 1;
     display: flex;
     justify-content: right;
     align-items: flex-end;
@@ -244,18 +244,18 @@ body {
 }
 
 .icons button:hover {
-   box-shadow: 2px 2px 4px gray;
+    box-shadow: 2px 2px 4px gray;
 }
 
 .icons button:active {
-   box-shadow: 2px 2px 4px rgb(50, 50, 50);
+    box-shadow: 2px 2px 4px rgb(50, 50, 50);
 }
 
 .news {
     background-color: #E2E8F0;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    gap:25px;
+    gap: 25px;
 }
 
 .announcements {
@@ -269,16 +269,16 @@ body {
 }
 
 .announcements .bottom {
-    display:grid;
+    display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    
+
 }
 
 .announcements .bottom .ann {
     display: flex;
     flex-direction: column;
     padding: 28px;
-    
+
     box-shadow:
         -6px 0 white,
         /*Left masking shadow*/
@@ -289,8 +289,8 @@ body {
 
 .bottom .ann .header {
     margin-left: 4px;
-    margin-bottom:-30px;
-    padding:0;
+    margin-bottom: -30px;
+    padding: 0;
     font-size: 0.7em;
 }
 
@@ -301,10 +301,43 @@ body {
 .announcements .bottom .description {
     font-size: 0.7em;
     font-weight: 400;
-    color:gray;
+    color: gray;
 }
 
+.trend {
+    display:flex;
+}
 
+.trend img {
+    width: 60px;
+    height: auto;
+}
+
+.trending .bottom {
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.bottom .trend .who {
+    margin-left: 4px;
+   
+    padding: 0;
+    font-size: 0.7em;
+}
+
+.bottom .trend .description {
+    font-size: 0.7em;
+    font-weight: 400;
+    color: gray;
+}
+
+.trending {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
